@@ -1,10 +1,6 @@
 package cozyConePackage;
 
-public abstract class Cone  {
-
-    Cone(){
-
-    }
+public interface Cone  {
 
 
     public abstract double calculoFinal();

@@ -1,6 +1,6 @@
 package cozyConePackage;
 
-public class ConeSimples extends Cone {
+public class ConeSimples implements Cone {
 
     @Override
     public double calculoFinal() {

@@ -2,7 +2,6 @@ package aplicacao;
 
 import cozyConePackage.Cone;
 import cozyConePackage.ConeFactory;
-import cozyConePackage.ConeSimples;
 import cozyConePackage.TipoCones;
 
 public class Main {
