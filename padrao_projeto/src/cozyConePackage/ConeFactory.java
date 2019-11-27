@@ -4,14 +4,14 @@ public class ConeFactory {
 
     private Cone cone;
 
-    public Cone getCone(TipoCones type) {
+    public Cone getCone(ConeTypes type) {
 
         switch (type) {
-            case CONE_VARANDA:
-                cone = new ConeVaranda();
+            case BALCONY_CONE:
+                cone = new DailyBalconyCone();
                 break;
             default:
-                cone = new ConeSimples();
+                cone = new DailySimpleCone();
                 break;
         }
         return cone;

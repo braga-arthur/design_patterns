@@ -1,8 +1,8 @@
-package aplicacao;
+package applicationPackage;
 
 import cozyConePackage.Cone;
 import cozyConePackage.ConeFactory;
-import cozyConePackage.TipoCones;
+import cozyConePackage.ConeTypes;
 
 public class Main {
 
@@ -10,7 +10,7 @@ public class Main {
 
         ConeFactory coneFactory = new ConeFactory();
 
-        Cone cone1 = coneFactory.getCone(TipoCones.CONE_SIMPLES);
-        Cone cone2 = coneFactory.getCone(TipoCones.CONE_VARANDA);
+        Cone cone1 = coneFactory.getCone(ConeTypes.BALCONY_CONE);
+        Cone cone2 = coneFactory.getCone(ConeTypes.SIMPLE_CONE);
     }
 }
