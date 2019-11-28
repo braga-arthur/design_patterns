@@ -10,7 +10,7 @@ public class Main {
 
         ConeFactory coneFactory = new ConeFactory();
 
-        Cone cone1 = coneFactory.getCone(ConeTypes.BALCONY_CONE);
-        Cone cone2 = coneFactory.getCone(ConeTypes.SIMPLE_CONE);
+        Cone cone1 = coneFactory.getCone(ConeTypes.DAILY_BALCONY_CONE);
+        Cone cone2 = coneFactory.getCone(ConeTypes.DAILY_SIMPLE_CONE);
     }
 }

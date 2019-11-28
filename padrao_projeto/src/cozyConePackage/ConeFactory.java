@@ -7,7 +7,7 @@ public class ConeFactory {
     public Cone getCone(ConeTypes type) {
 
         switch (type) {
-            case BALCONY_CONE:
+            case DAILY_BALCONY_CONE:
                 cone = new DailyBalconyCone();
                 break;
             default:
