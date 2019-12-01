@@ -8,7 +8,7 @@ import java.util.Queue;
 public class SingletonCozyCone {
 
     private static final int LIMIT_CONES = 20;
-    private static final SingletonCozyCone cozyCone = new SingletonCozyCone();
+    private static SingletonCozyCone cozyCone;
     private List<Cone> cones = new ArrayList<>(LIMIT_CONES);
     private List<Cone> waitList = new ArrayList<>();
     private boolean flagFull = false;
@@ -18,6 +18,9 @@ public class SingletonCozyCone {
     }
 
     public static SingletonCozyCone getInstance() {
+        if(cozyCone == null) {
+            return cozyCone = new SingletonCozyCone();
+        }
         return cozyCone;
     }
 
