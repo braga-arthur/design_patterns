@@ -4,7 +4,7 @@ import cozyConePackage.Cone;
 
 public class SPA extends ConeDecorator {
 
-    SPA(Cone cone) {
+    public SPA(Cone cone) {
         super(cone);
     }
 

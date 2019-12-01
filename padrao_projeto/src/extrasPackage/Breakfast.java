@@ -4,7 +4,7 @@ import cozyConePackage.Cone;
 
 public class Breakfast extends ConeDecorator {
 
-    Breakfast(Cone cone) {
+    public Breakfast(Cone cone) {
         super(cone);
     }
 
