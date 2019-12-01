@@ -8,6 +8,7 @@ public class DailySimpleCone implements Cone {
         this.user = user;
     }
 
+    @Override
     public User getUser() {
         return user;
     }

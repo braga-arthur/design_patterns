@@ -2,6 +2,7 @@ package extrasPackage;
 
 import cozyConePackage.Cone;
 import cozyConePackage.DailySimpleCone;
+import cozyConePackage.User;
 
 public class Party extends ConeDecorator {
 
@@ -15,5 +16,10 @@ public class Party extends ConeDecorator {
             return cone.getPrice() * 1.40;
         }
             return cone.getPrice() * 1.30;
+    }
+
+    @Override
+    public User getUser() {
+        return cone.getUser();
     }
 }

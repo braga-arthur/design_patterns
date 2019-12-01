@@ -1,7 +1,5 @@
 package observer;
 
-import cozyConePackage.SingletonCozyCone;
-
 import javax.swing.*;
 
 public class FlagObserver extends Observer {

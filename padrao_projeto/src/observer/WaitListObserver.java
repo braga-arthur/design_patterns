@@ -10,8 +10,8 @@ public class WaitListObserver extends Observer {
 
 	@Override
 	public void update() {
-		if(!SingletonCozyCone.getInstance().isFull()){
-
+		if(!subject.getState()){
+			SingletonCozyCone.getInstance().getWaitList().forEach(w -> System.out.println("O usuário " + w.getUser().getName() + " foi avisado que há vagas."));
 		}
 	}
 }

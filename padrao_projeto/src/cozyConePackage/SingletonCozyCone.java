@@ -49,4 +49,8 @@ public class SingletonCozyCone {
     public void setFlagFull(boolean flagFull) {
         this.flagFull = flagFull;
     }
+
+    public List<Cone> getWaitList() {
+        return waitList;
+    }
 }

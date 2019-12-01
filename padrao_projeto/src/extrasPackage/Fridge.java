@@ -1,6 +1,7 @@
 package extrasPackage;
 
 import cozyConePackage.Cone;
+import cozyConePackage.User;
 
 public class Fridge extends ConeDecorator {
 
@@ -12,4 +13,11 @@ public class Fridge extends ConeDecorator {
     public double getPrice() {
         return cone.getPrice() + 40.00;
     }
+
+    @Override
+    public User getUser() {
+        return cone.getUser();
+    }
+
+
 }
