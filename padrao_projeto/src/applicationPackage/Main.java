@@ -1,9 +1,6 @@
 package applicationPackage;
 
-import cozyConePackage.Cone;
-import cozyConePackage.ConeFactory;
-import cozyConePackage.ConeTypes;
-import cozyConePackage.User;
+import cozyConePackage.*;
 import exceptionPackage.InvalidConeInstanceExpection;
 import observer.FlagObserver;
 import observer.Subject;
@@ -25,5 +22,7 @@ public class Main {
 
         Subject subject = new Subject();
         new FlagObserver(subject);
+
+        subject.setState(SingletonCozyCone.getInstance().isFlagFull());
     }
 }
