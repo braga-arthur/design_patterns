@@ -5,7 +5,7 @@ import cozyConePackage.DailySimpleCone;
 
 public class Party extends ConeDecorator {
 
-    Party(Cone cone) {
+    public Party(Cone cone) {
         super(cone);
     }
 

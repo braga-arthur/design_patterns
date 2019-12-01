@@ -3,6 +3,8 @@ package applicationPackage;
 import cozyConePackage.Cone;
 import cozyConePackage.ConeFactory;
 import cozyConePackage.ConeTypes;
+import cozyConePackage.User;
+import exceptionPackage.InvalidConeInstanceExpection;
 import observer.FlagObserver;
 import observer.Subject;
 
@@ -11,9 +13,15 @@ public class Main {
     public static void main(String[] args) {
 
         ConeFactory coneFactory = new ConeFactory();
+        User user1 = new User("Joselito");
+        User user2 = new User("Maquinhos");
 
-        Cone cone1 = coneFactory.getCone(ConeTypes.DAILY_BALCONY_CONE);
-        Cone cone2 = coneFactory.getCone(ConeTypes.DAILY_SIMPLE_CONE);
+        try {
+            Cone cone1 = coneFactory.getCone(ConeTypes.DAILY_BALCONY_CONE, user1);
+            Cone cone2 = coneFactory.getCone(ConeTypes.DAILY_SIMPLE_CONE, user2);
+        } catch (InvalidConeInstanceExpection e){
+            System.out.println("Invalid type of cone");
+        }
 
         Subject subject = new Subject();
         new FlagObserver(subject);
