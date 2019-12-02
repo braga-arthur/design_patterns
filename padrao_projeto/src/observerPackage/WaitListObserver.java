@@ -1,4 +1,4 @@
-package observer;
+package observerPackage;
 
 import cozyConePackage.SingletonCozyCone;
 

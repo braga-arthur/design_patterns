@@ -1,7 +1,7 @@
 package testsPackage;
 
 import cozyConePackage.*;
-import exceptionPackage.InvalidConeInstanceExpection;
+import exceptionPackage.InvalidConeInstanceException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -21,22 +21,22 @@ public class ConeFactoryTest {
     }
 
     @Test
-    public void getDailyBalconyConeTest() throws InvalidConeInstanceExpection {
+    public void getDailyBalconyConeTest() throws InvalidConeInstanceException {
         assertTrue(coneFactory.getCone(ConeTypes.DAILY_BALCONY_CONE, user) instanceof DailyBalconyCone);
     }
 
     @Test
-    public void getDailySimpleConeTest() throws InvalidConeInstanceExpection {
+    public void getDailySimpleConeTest() throws InvalidConeInstanceException {
         assertTrue(coneFactory.getCone(ConeTypes.DAILY_SIMPLE_CONE, user) instanceof DailySimpleCone);
     }
 
     @Test
-    public void getDailyBalconyConeNullTest() throws InvalidConeInstanceExpection {
+    public void getDailyBalconyConeNullTest() throws InvalidConeInstanceException {
         assertFalse(coneFactory.getCone(ConeTypes.DAILY_BALCONY_CONE, user) instanceof NullType);
     }
 
     @Test
-    public void getDailySimpleConeNullTest() throws InvalidConeInstanceExpection {
+    public void getDailySimpleConeNullTest() throws InvalidConeInstanceException {
         assertFalse(coneFactory.getCone(ConeTypes.DAILY_SIMPLE_CONE, user) instanceof NullType);
     }
 

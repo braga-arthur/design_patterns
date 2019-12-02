@@ -1,8 +1,8 @@
 package exceptionPackage;
 
-public class InvalidConeInstanceExpection extends Exception{
+public class InvalidConeInstanceException extends Exception{
 
-    public InvalidConeInstanceExpection(String msg){
+    public InvalidConeInstanceException(String msg){
         super(msg);
     }
 }

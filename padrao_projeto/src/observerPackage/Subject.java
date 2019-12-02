@@ -1,6 +1,4 @@
-package observer;
-
-import cozyConePackage.SingletonCozyCone;
+package observerPackage;
 
 import java.util.ArrayList;
 import java.util.List;

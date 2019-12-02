@@ -2,9 +2,7 @@ package testsPackage;
 
 import cozyConePackage.Cone;
 import cozyConePackage.DailyBalconyCone;
-import cozyConePackage.DailySimpleCone;
 import cozyConePackage.User;
-import extrasPackage.Breakfast;
 import extrasPackage.Party;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

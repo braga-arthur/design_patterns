@@ -1,12 +1,12 @@
 package cozyConePackage;
 
-import exceptionPackage.InvalidConeInstanceExpection;
+import exceptionPackage.InvalidConeInstanceException;
 
 public class ConeFactory {
 
     private Cone cone;
 
-    public Cone getCone(ConeTypes type, User user) throws InvalidConeInstanceExpection {
+    public Cone getCone(ConeTypes type, User user) throws InvalidConeInstanceException {
 
         switch (type) {
             case DAILY_BALCONY_CONE:
